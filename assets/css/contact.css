@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;  
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    resize: vertical;
+  }
+  input[type=submit] {
+    background-color: #415883;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .submit{
+      text-align: center;
+  }
+  
+  input[type=submit]:hover {
+    background-color:white;
+    color: black;
+  }
+  
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .col {
+    float: left;
+    width: 67%;
+    margin-top: 6px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media screen and (max-width: 600px) {
+    .col, input[type=submit], .submit {
+      width: 100%;
+      margin-top: 0;
+      margin-right: 0px;
+    }
+  }
